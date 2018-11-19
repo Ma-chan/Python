@@ -1,5 +1,6 @@
 class Q:
    def __init__(self, a, b=1):
+       gcd=math.gcd(a,b)
        self.a=a
        self.b=b
    def __repr__(self):
