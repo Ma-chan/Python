@@ -1,14 +1,14 @@
 import re
-def strMath(BL):
+def strMath(str):
    global BL
-   BL = re.split('[tasu,hiku]', BL)
+   BL = re.split('[tasu,hiku]', str)
    tasu = BL[0]
    hiku = BL[0]
    sum = 0
 
-   for i in range(0, len(BL)):
+   for i in range(len(BL)):
      if 'tasu' != BL[i]:
       "sum += int(BL[i])"
      elif 'hiku' != BL[i]:
       "sum -= int(BL[i])"
-   print(sum)
+   return sum
