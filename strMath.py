@@ -1,14 +1,11 @@
 import re
 def strMath(str):
-   global BL
-   BL = re.split('[tasu,hiku]', str)
-   tasu = BL[0]
-   hiku = BL[0]
-   sum = 0
-
-   for i in range(len(BL)):
-     if 'tasu' != BL[i]:
-      "sum += int(BL[i])"
-     elif 'hiku' != BL[i]:
-      "sum -= int(BL[i])"
-   return sum
+    global strarr
+    input1="1足す3"
+    strarr = re.split('[足す,引く]',input1)
+    for i in range(len(strarr)):
+        if strarr[i] != "足す":
+            'sum += int(strarr[i])'
+        if strarr[i] != "引く":
+            'sum -= int(strarr[i])'
+    return sum
