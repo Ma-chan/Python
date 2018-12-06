@@ -1,7 +1,8 @@
-def getNum(w):
-    for i in range(0,len(w)):
-     if w[i] == [0-9]:
-         w.append(w[i])
-     else:
-         break
-    return w[i]
+def getNum(m):
+   w = []
+   for i in range(0,len(m)):
+    if m == [0-9]:
+        w += int(m[i])
+    else:
+        break
+   return w
