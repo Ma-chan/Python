@@ -2,7 +2,7 @@ def getNum1(BL):
     b_num = []
     b_remain = []
     n=0
-
+    a=s
     for i in range(0,len(BL)):
         if BL[i] == n:
             while n <= 9:
@@ -12,9 +12,9 @@ def getNum1(BL):
         else:
             print('False')
             break
-
-    for k in range(k,len(BL)):
-        b_remain += str(BL[k])
+            
+    for a in range(s,len(BL)):
+        b_remain += str(BL[a])
 
     return b_num
     return b_remain
