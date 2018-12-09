@@ -1,20 +1,18 @@
-def getNum1(BL):
+def getNum(a):
     b_num = []
-    b_remain = []
     n=0
-    a=s
-    for i in range(0,len(BL)):
-        if BL[i] == n:
-            while n <= 9:
+    for i in range(0, len(a)):
+        print(a[i], n)
+        if a[i] == n:
+            while n<= 9:
                 print('True')
-                b_num += str(BL[i])
-                i += 1
+                b_num += [a[i]]
         else:
             print('False')
             break
-            
-    for a in range(s,len(BL)):
-        b_remain += str(BL[a])
+        return b_num
 
-    return b_num
+    b_remain = []
+    for b in range(k,len(a)):
+        b_remain += [a[b]]
     return b_remain
