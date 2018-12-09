@@ -1,14 +1,13 @@
-def getNum(m):
+def getNum(a):
    b_num = []
    n=0
-   for i in range(0,len(m)):
-     for n in range(10):
-      if int(m[i]) == n:
+   for i in range(len(a)):
+      if a[i] == n:
+       for n in range(0, 9):
         print('True')
-        b_num.append(n)
-        print(b_num)
+        b_num += [int(a[i])]
+        return b_num
       else:
-        break
         print('False')
-        print(b_num)
-   return b_num
+        return b_num
+        break
