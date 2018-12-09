@@ -1,13 +1,14 @@
 def getNum(m):
-   w = []
-   n = 0
+   b_num = []
+   n=0
    for i in range(0,len(m)):
-     if int(m[i]) == n:
-      while n <= 9:
+     for n in range(10):
+      if int(m[i]) == n:
         print('True')
-        w += str(m[i])
-        i += 1
-     else:
-        print('False')
+        b_num.append(n)
+        print(b_num)
+      else:
         break
-   return w
+        print('False')
+        print(b_num)
+   return b_num
