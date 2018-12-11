@@ -1,16 +1,13 @@
-def getNum(a):
+def getNum(s):
     b_num = []
     n=0
-    for i in range(0, len(a)):
-        while n <= 9:
-            if a[i] == n:
+    for i in range(0, len(s)):
+          if s[i] == n:
+           while n <=9:
               print('True')
-              print(a[i],n)
-              b_num += a[i]
-            elif str(a[i]) == '+':
-                print('False')
-                break
-            elif str(a[i]) == '-':
-                print('False')
-                break
+              print(s[i],n)
+              b_num.extend(n)
+          else:
+              print('False')
+              break
     return b_num
