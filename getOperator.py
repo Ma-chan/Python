@@ -1,15 +1,13 @@
 def getOperator(s):
-    a_op=[]
-    a_remain=[]
-
-    for i in range(0,len(s)):
-        if s[i] == '+':
-          a_op = s[i]
-
-        elif s[i] == '-':
-          a_op = s[i]
-        else:
-          a_remain = s[i:]
-          i=i+1
-          break
-    return a_op,a_remain
+    a_op = ''
+    a_num = ''
+    if s[0] == '+':
+        a_op = s[0]
+        a_num = s[1:]
+    elif s[0] == '-':
+        a_op = s[0]
+        a_num = s[1:]
+    else:
+        a_op = ''
+        a_num = s[0:]
+    return a_op,a_num
