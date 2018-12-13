@@ -1,13 +1,20 @@
 def addsub(s):
-    sum=''
-    for i in range(0,len(s)):
-        if s[i] == '+':
-            sum += s[i+1]
-            i=i+1
-        elif s[i] == '-':
-            sum -= s[i+1]
-            i=i+1
-        else:
-            sum = s[0:]
-            break
-    return sum
+  left = ""
+  right= ""
+  sum = ""
+
+  for i in range(0, len(s)):
+      if s[i] == '+':
+          left = s[0:i]
+          right = s[i+1:]
+          sum=int(left)+int(right)
+          break
+      elif s[i] == '-':
+          left = s[0:i]
+          right = s[i + 1:]
+          sum = int(left)-int(right)
+          break
+      else:
+          sum = left
+          left = s[0:]
+  return sum
